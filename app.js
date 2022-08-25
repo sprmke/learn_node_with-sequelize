@@ -8,7 +8,7 @@ const shopRoutes = require('./routes/shop');
 
 const errorConroller = require('./controllers/error');
 
-const db = require('./util/database');
+const sequelize = require('./util/database');
 
 const app = express();
 
@@ -21,5 +21,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/admin', adminRoutes);
 app.use(shopRoutes);
 app.use(errorConroller.get404);
+
+sequelize
+  .sync()
+  .then((result) => console.log(result))
+  .catch((error) => console.log(error));
 
 app.listen(3000);
