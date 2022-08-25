@@ -1,4 +1,4 @@
-# Learn Node: Node Basics + MySQL
+# Learn Node: Node Basics + Sequelize
 
 ##### Course:
 
@@ -6,5 +6,5 @@
 
 ##### Application Scope:
 
-- S3-S10: Node/Express Basics + MySQL
-- Topics discussed: Understanding the Basics, Improved Development Workflow & Debugging, Working with Express, Working with Dynamic Content and Adding Templating Engines, The Model View Controller (MVC), Enhancing the App, Dynamic Routes & Advanced Models, SQL Introduction
+- S11: Node/Express Basics + Sequelize
+- Topics discussed: Connecting to Database, Defining a Model, Syncing JS Definitions, CRUD with Sequelize, 1-to-1 Relation, Using Magic Association Methods, 1-to-many Relationship
