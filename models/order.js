@@ -9,10 +9,6 @@ const Order = sequelize.define('order', {
     allowNull: false,
     primaryKey: true,
   },
-  userId: {
-    type: Sequelize.INTEGER,
-    unique: true,
-  },
 });
 
 module.exports = Order;
